@@ -1,0 +1,11 @@
+flask
+openai
+num2words
+pandas
+tiktoken
+pyodbc
+python-dotenv
+azure-ai-formrecognizer==3.3.2
+azure-core
+numpy
+flask_cors

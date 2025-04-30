@@ -1,0 +1,9 @@
+{
+  "name": "my-fullstack-app",
+  "scripts": {
+    "start": "concurrently \"cd backend && python main.py\" \"cd client && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
