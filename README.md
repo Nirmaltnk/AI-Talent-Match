@@ -3,38 +3,53 @@ AI Talent Match is an AI-powered platform that streamlines recruitment by intell
 
 ## Installation and Running Guide
 **Prerequisites**
-   Python 3.8+
-   Node.js 14+ and npm
-   Git
-**Backend Setup (Flask)**
-Clone the Repository
-bash git clone https://github.com/your-username/your-repo-name.git cd your-repo-name
-
-Create a Virtual Environment
-bash python -m venv venv source venv/bin/activate # On Windows: venv\Scripts\activate
-
-Install Python Dependencies
-bash pip install -r backend/requirements.txt
-
-Run the Flask Server
-bash cd backend flask run # or python app.py depending on your setup
-
-By default, the Flask API will run at: http://127.0.0.1:5000
-
-🌐 Frontend Setup (React)
-Navigate to Frontend Directory
-bash cd frontend
-
-Install Node Dependencies
-bash npm install
-
-Run the React App
-bash npm start
-
-The React app will start on: http://localhost:3000
-
-🔁 API Proxy (Optional)
-To connect React with Flask during development, ensure this line exists in your frontend/package.json:
-
-"proxy": "http://localhost:5000"
-This allows React to proxy API requests to Flask without CORS issues.
+- Python 3.8+
+- Node.js 14+ and npm
+- Git
+ 
+### Initial Setup 
+**Clone the Repository**
+```sh
+git clone https://github.com/Nirmaltnk/AI-Talent-Match.git 
+cd AI-Talent-Match
+```
+**Install Node Dependencies**
+```sh
+npm install # in the root directory
+```
+ 
+### Backend Setup (Flask)**
+**Create a Virtual Environment**
+```sh 
+cd backend
+python -m venv venv 
+source venv/bin/activate 
+# On Windows: venv\Scripts\activate.bat
+```
+ 
+**Install Python Dependencies**
+```sh
+pip install -r backend/requirements.txt
+```
+**Go back to root directory**
+```sh
+cd ..
+```
+### Frontend Setup (React)
+**Navigate to client Directory**
+```sh 
+cd client
+```
+ 
+**Install Node Dependencies**
+```sh  
+npm install
+```
+ 
+**Run the React App and backend server together**
+```sh 
+cd .. # Navigate back to root directory
+npm start
+```
+ 
+The React app will start on: http://localhost:5173 and the backend server start in http://localhost:5000
